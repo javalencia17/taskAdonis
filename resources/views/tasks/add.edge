@@ -1,0 +1,22 @@
+@layout('main')
+
+@section('conten')
+
+    <form action="/tasks" method="POST">
+        {{ csrfField() }}
+
+        <div class="formgroup">
+            <label >Title</label>
+            <input type="text" name="title" class="form-control">
+        </div>
+
+        <div class="formgroup">
+            <label >Body</label>
+            <input type="text" name="body" class="form-control">
+        </div>
+
+        <button class="btn btn-primary">Guardar</button>
+
+    </form>
+
+@endsection

@@ -1,0 +1,15 @@
+<div class="container">
+
+    <div class="formgroup">
+        <label >Title</label>
+    <input type="text" id="titleM" class="form-control" value="{{ task.title }}">
+    </div>
+
+    <div class="formgroup">
+        <label >Body</label>
+        <input type="text" id="bodyM" class="form-control" value="{{ task.body }}">
+    </div>
+
+    <button class="btn btn-primary" onclick="editTask({{ task.id }})">Editar</button>
+
+</div>
